@@ -14,7 +14,13 @@ To be written.
 
 ### Using CocoaPods
 
-To be written.
+Add `PFTagView` to your `Podfile`:
+
+```ruby
+pod 'PFTagView'
+```
+
+Run `pod install` to install this framework.
 
 ### Manually
 
