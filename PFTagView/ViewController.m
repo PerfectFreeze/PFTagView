@@ -32,9 +32,10 @@
 
     // Config whatever you like
     PFTagViewConfiguration *configuration = [PFTagViewConfiguration new];
-    configuration.tagViewCountLabelTextColor = [UIColor blueColor];
+    configuration.tagViewBackgroundColor = [UIColor blackColor];
+    configuration.tagViewCountLabelTextColor = [UIColor yellowColor];
+    configuration.tagViewMainTextColor = [UIColor whiteColor];
     configuration.tagViewCountLabelFontSize = 8.f;
-    configuration.tagViewMainTextColor = [UIColor redColor];
     configuration.maxFontSize = 24.f;
     configuration.minFontSize = 10.f;
     configuration.tagViewHeight = 30.f;
@@ -51,6 +52,12 @@
     sampleView3.layer.borderColor = [UIColor blackColor].CGColor;
     sampleView3.layer.borderWidth = 1.f;
     [self.view addSubview:sampleView3];
+    
+    // Scroll, with configuration!
+    PFTagViewList *sampleView4 = [[PFTagViewList alloc] initWithFrame:CGRectMake(0, 600, self.view.frame.size.width, 30)
+                                                                 dict:dict
+                                                               config:configuration];
+    [self.view addSubview:sampleView4];
 
 }
 

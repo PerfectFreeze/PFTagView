@@ -37,6 +37,7 @@
         self.maxFontSize = self.configuration.maxFontSize;
         self.minFontSize = self.configuration.minFontSize;
         self.margin = self.configuration.tagViewMargin;
+        self.scrollView.backgroundColor = self.configuration.tagViewBackgroundColor;
         [self addSubview:self.scrollView];
         [self setup];
     }

@@ -12,6 +12,7 @@
 
 @property (nonatomic, assign) CGFloat maxFontSize;
 @property (nonatomic, assign) CGFloat minFontSize;
+@property (nonatomic, strong) UIColor *tagViewBackgroundColor;
 @property (nonatomic, strong) UIColor *tagViewMainTextColor;
 @property (nonatomic, strong) UIColor *tagViewCountLabelTextColor;
 @property (nonatomic, assign) CGFloat tagViewCountLabelFontSize;

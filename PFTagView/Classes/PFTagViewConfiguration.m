@@ -16,6 +16,7 @@
         // Default values
         self.maxFontSize = 48.f;
         self.minFontSize = 16.f;
+        self.tagViewBackgroundColor = [UIColor clearColor];
         self.tagViewMainTextColor = [UIColor blackColor];
         self.tagViewCountLabelTextColor = [UIColor blackColor];
         self.tagViewCountLabelFontSize = 10.f;
