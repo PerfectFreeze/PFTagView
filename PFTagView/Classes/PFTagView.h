@@ -7,21 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PFTagViewConfiguration.h"
+#import "PFTagViewCell.h"
 
 @interface PFTagView : UIView
 
 - (id)initWithFrame:(CGRect)frame
-               text:(NSString *)text
-              count:(NSUInteger)count
-           fontSize:(CGFloat)fontSize
-      configuration:(PFTagViewConfiguration *)configuration;
-
-+ (CGFloat)widthWithText:(NSString *)text
-                   count:(NSUInteger)count
-                fontSize:(CGFloat)fontSize
-                maxWidth:(CGFloat)maxWidth
-               maxHeight:(CGFloat)maxHeight
-      countLabelFontSize:(CGFloat)countLabelFontSize;
+               dict:(NSDictionary *)dict
+             config:(PFTagViewConfiguration *)configuration;
 
 @end

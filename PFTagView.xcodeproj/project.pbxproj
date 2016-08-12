@@ -7,18 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9269129D1D5D70880090F99D /* PFTagView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926912961D5D70880090F99D /* PFTagView.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		9269129E1D5D70880090F99D /* PFTagView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 926912961D5D70880090F99D /* PFTagView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		926912A21D5D70920090F99D /* PFTagViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ECBBC81D5B763000371D69 /* PFTagViewCell.m */; };
+		926912A31D5D70920090F99D /* PFTagViewConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ECBBCA1D5B763000371D69 /* PFTagViewConfiguration.m */; };
+		926912A41D5D70920090F99D /* PFTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ECBBCC1D5B763000371D69 /* PFTagView.m */; };
+		926912A71D5D70970090F99D /* PFTagView.h in Headers */ = {isa = PBXBuildFile; fileRef = 92ECBBCB1D5B763000371D69 /* PFTagView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		926912A91D5D745E0090F99D /* PFTagViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 92ECBBC71D5B763000371D69 /* PFTagViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		926912AA1D5D745E0090F99D /* PFTagViewConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 92ECBBC91D5B763000371D69 /* PFTagViewConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		92ECBBB11D5B761400371D69 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ECBBB01D5B761400371D69 /* main.m */; };
 		92ECBBB41D5B761400371D69 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ECBBB31D5B761400371D69 /* AppDelegate.m */; };
 		92ECBBB71D5B761400371D69 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ECBBB61D5B761400371D69 /* ViewController.m */; };
 		92ECBBBA1D5B761400371D69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92ECBBB81D5B761400371D69 /* Main.storyboard */; };
 		92ECBBBC1D5B761400371D69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92ECBBBB1D5B761400371D69 /* Assets.xcassets */; };
 		92ECBBBF1D5B761400371D69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92ECBBBD1D5B761400371D69 /* LaunchScreen.storyboard */; };
-		92ECBBCD1D5B763000371D69 /* PFTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ECBBC81D5B763000371D69 /* PFTagView.m */; };
-		92ECBBCE1D5B763000371D69 /* PFTagViewConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ECBBCA1D5B763000371D69 /* PFTagViewConfiguration.m */; };
-		92ECBBCF1D5B763000371D69 /* PFTagViewList.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ECBBCC1D5B763000371D69 /* PFTagViewList.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9269129B1D5D70880090F99D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92ECBBA41D5B761400371D69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 926912951D5D70880090F99D;
+			remoteInfo = PFTagViewFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9228CB991D5C3AF5002D9C23 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9269129E1D5D70880090F99D /* PFTagView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		926912961D5D70880090F99D /* PFTagView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PFTagView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9269129A1D5D70880090F99D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92ECBBAC1D5B761400371D69 /* PFTagView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PFTagView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92ECBBB01D5B761400371D69 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		92ECBBB21D5B761400371D69 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -29,29 +60,47 @@
 		92ECBBBB1D5B761400371D69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92ECBBBE1D5B761400371D69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92ECBBC01D5B761400371D69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		92ECBBC71D5B763000371D69 /* PFTagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFTagView.h; sourceTree = "<group>"; };
-		92ECBBC81D5B763000371D69 /* PFTagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFTagView.m; sourceTree = "<group>"; };
+		92ECBBC71D5B763000371D69 /* PFTagViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFTagViewCell.h; sourceTree = "<group>"; };
+		92ECBBC81D5B763000371D69 /* PFTagViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFTagViewCell.m; sourceTree = "<group>"; };
 		92ECBBC91D5B763000371D69 /* PFTagViewConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFTagViewConfiguration.h; sourceTree = "<group>"; };
 		92ECBBCA1D5B763000371D69 /* PFTagViewConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFTagViewConfiguration.m; sourceTree = "<group>"; };
-		92ECBBCB1D5B763000371D69 /* PFTagViewList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFTagViewList.h; sourceTree = "<group>"; };
-		92ECBBCC1D5B763000371D69 /* PFTagViewList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFTagViewList.m; sourceTree = "<group>"; };
+		92ECBBCB1D5B763000371D69 /* PFTagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFTagView.h; sourceTree = "<group>"; };
+		92ECBBCC1D5B763000371D69 /* PFTagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFTagView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		92ECBBA91D5B761400371D69 /* Frameworks */ = {
+		926912921D5D70880090F99D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		92ECBBA91D5B761400371D69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9269129D1D5D70880090F99D /* PFTagView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		926912971D5D70880090F99D /* PFTagViewFramework */ = {
+			isa = PBXGroup;
+			children = (
+				9269129A1D5D70880090F99D /* Info.plist */,
+			);
+			path = PFTagViewFramework;
+			sourceTree = "<group>";
+		};
 		92ECBBA31D5B761400371D69 = {
 			isa = PBXGroup;
 			children = (
+				92ECBBC61D5B763000371D69 /* Classes */,
 				92ECBBAE1D5B761400371D69 /* PFTagView */,
+				926912971D5D70880090F99D /* PFTagViewFramework */,
 				92ECBBAD1D5B761400371D69 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				92ECBBAC1D5B761400371D69 /* PFTagView.app */,
+				926912961D5D70880090F99D /* PFTagView.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,7 +117,6 @@
 		92ECBBAE1D5B761400371D69 /* PFTagView */ = {
 			isa = PBXGroup;
 			children = (
-				92ECBBC61D5B763000371D69 /* Classes */,
 				92ECBBB21D5B761400371D69 /* AppDelegate.h */,
 				92ECBBB31D5B761400371D69 /* AppDelegate.m */,
 				92ECBBB51D5B761400371D69 /* ViewController.h */,
@@ -92,19 +141,51 @@
 		92ECBBC61D5B763000371D69 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				92ECBBC71D5B763000371D69 /* PFTagView.h */,
-				92ECBBC81D5B763000371D69 /* PFTagView.m */,
+				92ECBBC71D5B763000371D69 /* PFTagViewCell.h */,
+				92ECBBC81D5B763000371D69 /* PFTagViewCell.m */,
 				92ECBBC91D5B763000371D69 /* PFTagViewConfiguration.h */,
 				92ECBBCA1D5B763000371D69 /* PFTagViewConfiguration.m */,
-				92ECBBCB1D5B763000371D69 /* PFTagViewList.h */,
-				92ECBBCC1D5B763000371D69 /* PFTagViewList.m */,
+				92ECBBCB1D5B763000371D69 /* PFTagView.h */,
+				92ECBBCC1D5B763000371D69 /* PFTagView.m */,
 			);
-			path = Classes;
+			name = Classes;
+			path = PFTagView/Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		926912931D5D70880090F99D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				926912A91D5D745E0090F99D /* PFTagViewCell.h in Headers */,
+				926912AA1D5D745E0090F99D /* PFTagViewConfiguration.h in Headers */,
+				926912A71D5D70970090F99D /* PFTagView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		926912951D5D70880090F99D /* PFTagViewFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9269129F1D5D70880090F99D /* Build configuration list for PBXNativeTarget "PFTagViewFramework" */;
+			buildPhases = (
+				926912911D5D70880090F99D /* Sources */,
+				926912921D5D70880090F99D /* Frameworks */,
+				926912931D5D70880090F99D /* Headers */,
+				926912941D5D70880090F99D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PFTagViewFramework;
+			productName = PFTagViewFramework;
+			productReference = 926912961D5D70880090F99D /* PFTagView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		92ECBBAB1D5B761400371D69 /* PFTagView */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92ECBBC31D5B761400371D69 /* Build configuration list for PBXNativeTarget "PFTagView" */;
@@ -112,10 +193,12 @@
 				92ECBBA81D5B761400371D69 /* Sources */,
 				92ECBBA91D5B761400371D69 /* Frameworks */,
 				92ECBBAA1D5B761400371D69 /* Resources */,
+				9228CB991D5C3AF5002D9C23 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9269129C1D5D70880090F99D /* PBXTargetDependency */,
 			);
 			name = PFTagView;
 			productName = PFTagView;
@@ -131,6 +214,9 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Cee;
 				TargetAttributes = {
+					926912951D5D70880090F99D = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					92ECBBAB1D5B761400371D69 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
@@ -150,11 +236,19 @@
 			projectRoot = "";
 			targets = (
 				92ECBBAB1D5B761400371D69 /* PFTagView */,
+				926912951D5D70880090F99D /* PFTagViewFramework */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		926912941D5D70880090F99D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		92ECBBAA1D5B761400371D69 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -168,20 +262,35 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		926912911D5D70880090F99D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				926912A21D5D70920090F99D /* PFTagViewCell.m in Sources */,
+				926912A31D5D70920090F99D /* PFTagViewConfiguration.m in Sources */,
+				926912A41D5D70920090F99D /* PFTagView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		92ECBBA81D5B761400371D69 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92ECBBCE1D5B763000371D69 /* PFTagViewConfiguration.m in Sources */,
 				92ECBBB71D5B761400371D69 /* ViewController.m in Sources */,
 				92ECBBB41D5B761400371D69 /* AppDelegate.m in Sources */,
 				92ECBBB11D5B761400371D69 /* main.m in Sources */,
-				92ECBBCD1D5B763000371D69 /* PFTagView.m in Sources */,
-				92ECBBCF1D5B763000371D69 /* PFTagViewList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9269129C1D5D70880090F99D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 926912951D5D70880090F99D /* PFTagViewFramework */;
+			targetProxy = 9269129B1D5D70880090F99D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		92ECBBB81D5B761400371D69 /* Main.storyboard */ = {
@@ -203,6 +312,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		926912A01D5D70880090F99D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PFTagViewFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "-fembed-bitcode";
+				PRODUCT_BUNDLE_IDENTIFIER = io.Cee.PFTagViewFramework;
+				PRODUCT_MODULE_NAME = PFTagView;
+				PRODUCT_NAME = PFTagView;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		926912A11D5D70880090F99D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PFTagViewFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "-fembed-bitcode";
+				PRODUCT_BUNDLE_IDENTIFIER = io.Cee.PFTagViewFramework;
+				PRODUCT_MODULE_NAME = PFTagView;
+				PRODUCT_NAME = PFTagView;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		92ECBBC11D5B761400371D69 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -240,7 +393,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -279,7 +432,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -292,6 +445,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PFTagView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.Cee.PFTagView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -303,6 +457,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PFTagView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.Cee.PFTagView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -312,6 +467,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9269129F1D5D70880090F99D /* Build configuration list for PBXNativeTarget "PFTagViewFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				926912A01D5D70880090F99D /* Debug */,
+				926912A11D5D70880090F99D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		92ECBBA71D5B761400371D69 /* Build configuration list for PBXProject "PFTagView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -328,6 +491,7 @@
 				92ECBBC51D5B761400371D69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

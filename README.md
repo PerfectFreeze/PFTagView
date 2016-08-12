@@ -31,15 +31,15 @@ Drag `Classes` folder to your project.
 ### Get Started
 
 ```objective-c
-#import 'PFTagViewList.h'
+#import 'PFTagView.h'
 
 ...
 
 	// where you want to load this tag view
 	PFTagViewConfiguration *config = [PFTagViewConfiguration new];
-	PFTagViewList *view = [[PFTagViewList alloc] initWithFrame:frame
-                                                          dict:dict
-                                                        config:config];
+	PFTagView *view = [[PFTagView alloc] initWithFrame:frame
+                                                  dict:dict
+                                                config:config];
 ...
 
 @end
@@ -49,7 +49,7 @@ Drag `Classes` folder to your project.
 ### Configuration
 
 ```objective-c
-#import 'PFTagViewList.h'
+#import 'PFTagView.h'
 
 ...
 
@@ -62,9 +62,9 @@ Drag `Classes` folder to your project.
     config.minFontSize = 10.f;
     config.tagViewHeight = 30.f;
     config.tagViewMargin = 10.f;
-	PFTagViewList *view = [[PFTagViewList alloc] initWithFrame:frame
-                                                          dict:dict
-                                                        config:config];
+    PFTagView *view = [[PFTagView alloc] initWithFrame:frame
+                                                  dict:dict
+                                                config:config];
 ...
 
 @end

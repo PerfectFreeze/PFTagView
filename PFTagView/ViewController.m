@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "PFTagViewList.h"
+#import <PFTagView/PFTagView.h>
 
 @interface ViewController ()
 
@@ -25,7 +25,7 @@
                           @7, @"里约奥运会",
                           @3, @"今天有什么好玩的", nil];
     // By default
-    PFTagViewList *sampleView1 = [[PFTagViewList alloc] initWithFrame:CGRectMake(0, 20, self.view.frame.size.width, 200)
+    PFTagView *sampleView1 = [[PFTagView alloc] initWithFrame:CGRectMake(0, 20, self.view.frame.size.width, 200)
                                                                  dict:dict
                                                                config:[PFTagViewConfiguration new]];
     [self.view addSubview:sampleView1];
@@ -40,13 +40,13 @@
     configuration.minFontSize = 10.f;
     configuration.tagViewHeight = 30.f;
     configuration.tagViewMargin = 10.f;
-    PFTagViewList *sampleView2 = [[PFTagViewList alloc] initWithFrame:CGRectMake(0, 230, self.view.frame.size.width, 100)
+    PFTagView *sampleView2 = [[PFTagView alloc] initWithFrame:CGRectMake(0, 230, self.view.frame.size.width, 100)
                                                                  dict:dict
                                                                config:configuration];
     [self.view addSubview:sampleView2];
     
     // Let's scroll!
-    PFTagViewList *sampleView3 = [[PFTagViewList alloc] initWithFrame:CGRectMake(0, 400, self.view.frame.size.width, 100)
+    PFTagView *sampleView3 = [[PFTagView alloc] initWithFrame:CGRectMake(0, 400, self.view.frame.size.width, 100)
                                                                  dict:dict
                                                                config:[PFTagViewConfiguration new]];
     sampleView3.layer.borderColor = [UIColor blackColor].CGColor;
@@ -54,7 +54,7 @@
     [self.view addSubview:sampleView3];
     
     // Scroll, with configuration!
-    PFTagViewList *sampleView4 = [[PFTagViewList alloc] initWithFrame:CGRectMake(0, 600, self.view.frame.size.width, 30)
+    PFTagView *sampleView4 = [[PFTagView alloc] initWithFrame:CGRectMake(0, 600, self.view.frame.size.width, 30)
                                                                  dict:dict
                                                                config:configuration];
     [self.view addSubview:sampleView4];
