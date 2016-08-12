@@ -10,7 +10,15 @@ Just a tag view like the wordpress tag-cloud.
 
 ### Using Carthage
 
-To be written.
+Add `PFTagView` to your `Cartfile`:
+
+```
+github "PerfectFreeze/PFTagView"
+```
+
+Run `carthage` to build this framework. 
+
+Add `PFTagView.framework` to your Xcode project.
 
 ### Using CocoaPods
 
